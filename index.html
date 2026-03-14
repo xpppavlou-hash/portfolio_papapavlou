@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Χρύσα</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600,700&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  color:#1a1a1f;
+  line-height:1.6;
+  background: linear-gradient(135deg, #f2f2f7, #e0e0ea);
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  margin:auto;
+}
+
+/* INTRO */
+.hero{
+  text-align:center;
+  padding:140px 20px 80px;
+  position:relative;
+  background: #fdfdfd;
+  border-radius:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+  margin-top:40px;
+}
+
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:52px;
+  margin-bottom:16px;
+  letter-spacing:-1px;
+  background: linear-gradient(90deg, #ff9f80, #ff7f50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+  font-size:22px;
+  color:#555;
+  max-width:520px;
+  margin:auto;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  background:radial-gradient(circle, rgba(255,127,80,0.15), transparent 70%);
+  top:-120px;
+  left:50%;
+  transform:translateX(-50%);
+  filter:blur(60px);
+  opacity:.5;
+  pointer-events:none;
+}
+
+/* PORTFOLIO */
+.portfolio{
+  margin-top:40px;
+}
+
+.project{
+  margin-bottom:42px;
+}
+
+.project img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:16px;
+  border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+  padding:80px 20px 100px;
+}
+
+.contact p{
+  font-size:24px;
+  margin-bottom:30px;
+  color:#444;
+}
+
+.button{
+  padding:14px 26px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  transition:all .25s ease;
+  background:#ffb085;
+  color:#1a1a1f;
+  display:inline-block;
+  margin:6px;
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.button:hover{
+  transform:translateY(-3px);
+  background:#ffa070;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+  color:#555;
+}
+
+@media(max-width:700px){
+.hero h1{font-size:38px}
+.hero p{font-size:18px}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero container">
+<h1>Γεια!</h1>
+<p>Είμαι η Χρύσα και αυτό είναι το πορτφόλιό μου.</p>
+</section>
+
+<section class="portfolio container">
+<div class="project"><img src="portfolio-1.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-2.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-3.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-4.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-5.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-6.png" alt="portfolio" /></div>
+<div class="project"><img src="portfolio-7.png" alt="portfolio" /></div>
+
+</section>
+
+<section class="contact">
+<p>Θα χαρώ να συνεργαστούμε.</p>
+<a class="button" href="https://instagram.com/xrysart" target="_blank">Instagram</a>
+<a class="button" href="portfolio.pdf" download>Κατέβασε το PDF Portfolio</a>
+</section>
+
+<footer>© 2026 Portfolio</footer>
+
+</body>
+</html>
